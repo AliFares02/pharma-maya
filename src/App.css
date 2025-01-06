@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 html, body, #root{
   width: 100%;
   height: 100%;
@@ -6,6 +6,11 @@ html, body, #root{
   padding: 0;
   font-family: 'Lexend';
   scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .app-container{
@@ -20,7 +25,6 @@ html, body, #root{
   position: fixed;
   top: 0;
   left: 0;
-  height: 5rem;
   width: 100%;
   background-color: #f6f6f6;
   color: purple;
@@ -51,7 +55,7 @@ html, body, #root{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('src/images/pharma_maya.jpg');
   background-size: cover;
-  background-position: center 5rem;
+  background-position: center 4rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -76,7 +80,7 @@ html, body, #root{
   color: gold;
 }
 
-.review h2, p {
+.review > h2, .review > p{
   margin: 0; 
   text-align: center; 
 }
@@ -105,23 +109,42 @@ html, body, #root{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 1rem;
   height: 12rem;
+  min-height: fit-content;
   width: 100%;
   color: #503076;
   background-color: #f6f6f6;
   box-sizing: border-box;
 }
 
+.contact-info{
+  max-width: 100%;
+  display: flex;
+  gap: .7rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.divider {
+  width: 50%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(80, 48, 118, 0) 0%, rgba(80, 48, 118, 1) 50%, rgba(80, 48, 118, 0) 100%);
+  border: none;
+}
+
 .socials{
   display: flex;
+  gap: .4rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .social-handles{
   display: flex;
-  gap: 6px;
+  gap: 7px;
   justify-content: center;
   align-items: center;
 }
@@ -129,18 +152,18 @@ html, body, #root{
   cursor: pointer;
 }
 
-.hamburger-section{
+.header-section{
   display: flex;
-  gap: 10px;
 }
 
-.hamburger-section a{
+.header-section > a{
   position: relative;
   text-decoration: none;
   color: #503076;
+  margin: 0 2rem;
 }
 
-.hamburger-section a::before {
+.header-section a::before{
   content: '';
   position: absolute;
   top: 100%;
@@ -151,12 +174,44 @@ html, body, #root{
   transition: width .3s ease;
 }
 
-.hamburger-section a:hover::before{
+.header-section a:hover::before{
   width: 100%;
 }
 
-@media (max-width: 400px) {
-  .hamburger-section {
+.hamburger-icon-open, .hamburger-icon-close{
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* on mobile */
+@media (max-width: 768px) {
+  .header-section {
+    position: fixed;
     flex-direction: column;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out; 
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hamburger-icon-open, .hamburger-icon-close {
+    display: block;
+  }
+
+  .hamburger-icon-close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .header-section.show {
+    right: 0;
   }
 }
