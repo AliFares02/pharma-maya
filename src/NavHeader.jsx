@@ -23,14 +23,20 @@ function NavHeader() {
         <a href="#home-section" onClick={() => setMenu(false)}>
           Home
         </a>
-        <a href="#teams-section" onClick={() => setMenu(false)}>
-          Teams
-        </a>
         <a href="#about-section" onClick={() => setMenu(false)}>
-          About
+          About Us
+        </a>
+        <a
+          href="#medications-and-supplies-section"
+          onClick={() => setMenu(false)}
+        >
+          We Offer
+        </a>
+        <a href="#accepted-insurances-section" onClick={() => setMenu(false)}>
+          We Accept
         </a>
         <a href="#footer-section" onClick={() => setMenu(false)}>
-          Contact
+          Contact Us
         </a>
       </div>
     </div>

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 html, body, #root{
   width: 100%;
-  height: 100%;
+  min-width: 370px;
+  height: auto;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lexend';
@@ -14,7 +16,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .app-container{
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%; 
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -41,15 +46,22 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.home-container, .teams-container, .about-container {
+.home-container, .about-container, .medications-and-supplies-container, .accepted-insurances-container {
   position: relative;
   height: 100vh;
   width: 100%;
-  margin: 0;
+  min-width: 370px;
   padding-top: 5rem;
-  background-color: #503076;
-  color: #f6f6f6;
+  background-color: #dadada;
+  color: #503076;
 }
+
+/* .blob-shape {
+  width: 50%; 
+  height: 10rem;
+  background-color: #503076;
+  border-radius: 60% 40% 50% 50% / 40% 50% 60% 50%;
+} */
 
 .home-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -63,6 +75,72 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.home-content{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 25%;
+  flex-direction: column;
+  align-items: center;
+  color: #f6f6f6;
+  text-align: center;
+}
+
+.home-content > h3 {
+  margin-top: 1rem;
+}
+
+.scroll-down-indicator {
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: 5rem;
+  width: auto;
+  height: fit-content;
+  color: #f6f6f6;
+  animation: bouncing 1.3s infinite ease-in-out;
+}
+
+@keyframes bouncing {
+  0% {
+    bottom: 5.5rem;
+  }
+  50% {
+    bottom: 4.7rem;
+  }
+  100%{
+    bottom: 5.5rem;
+  }
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  align-items: center;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 800px;
+  padding: 2rem; 
+  margin: 0 auto; 
+}
+
+.about-us-content > p {
+  margin-bottom: 1rem; 
+}
+
+.about-us-content > h1 {
+  margin-bottom: 2rem; 
+  font-size: 2rem; 
+  color: #503076; 
+}
 .slick-slide .review {
   display: flex;
   flex-direction: column;
@@ -88,7 +166,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .slick-slider {
   width: 80%;
   overflow: hidden;
-  margin-top: -10rem;
 }
 
 .slick-track {
@@ -106,6 +183,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-container{
   margin: 0;
   padding: 0;
+  padding-top: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,38 +196,39 @@ p, h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
+.map-container{
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+iframe {
+  width: 98%;
+  height: 12.5rem; 
+  border: 2px solid #503076;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
 .contact-info{
   max-width: 100%;
   display: flex;
   gap: .7rem;
   justify-content: space-between;
-  align-items: center;
+  align-items:start;
   text-align: left;
   padding: 0 1rem;
 }
 
 .divider {
-  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 85%;
   height: 1px;
   background: linear-gradient(to right, rgba(80, 48, 118, 0) 0%, rgba(80, 48, 118, 1) 50%, rgba(80, 48, 118, 0) 100%);
   border: none;
-}
-
-.socials{
-  display: flex;
-  gap: .4rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.social-handles{
-  display: flex;
-  gap: 7px;
-  justify-content: center;
-  align-items: center;
-}
-.social-handles > svg {
-  cursor: pointer;
 }
 
 .header-section{
@@ -185,19 +264,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* on mobile */
-@media (max-width: 768px) {
+@media (max-width: 740px) {
+.about-container{
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 840px) {
   .header-section {
     position: fixed;
     flex-direction: column;
     top: 0;
-    right: -100%;
-    height: 100vh;
+    right: -255px;
+    height: 100%;
     width: 250px;
     background-color: #f6f6f6;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out; 
-    justify-content: center;
-    gap: 3rem;
+    justify-content:space-evenly;
     align-items: center;
   }
 
@@ -214,4 +297,5 @@ p, h1, h2, h3, h4, h5, h6 {
   .header-section.show {
     right: 0;
   }
+  
 }
