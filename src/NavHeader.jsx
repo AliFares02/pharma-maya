@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import logo from "/P X (20).png";
 
 function NavHeader() {
   const [menu, setMenu] = useState(false);
   return (
     <div className="header">
       <a href="#home-section" style={{ display: "flex", alignItems: "center" }}>
-        <img className="logo" src="src/images/P X (20).png" alt="logo" />
+        <img className="logo" src={logo} alt="pharma_maya_logo" />
       </a>
       {!menu && (
         <div className="hamburger-icon" onClick={() => setMenu(true)}>
