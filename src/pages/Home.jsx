@@ -13,7 +13,6 @@ function Home() {
         }}
       >
         <div className="home-content">
-          <img className="logo" src={logo} alt="pharma_maya_logo" />
           <h1>Pharma Maya</h1>
           <h2>Pharmacy</h2>
           <h3>
