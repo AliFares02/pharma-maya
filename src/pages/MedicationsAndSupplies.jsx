@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import vitaminsAndMinerals from "/vitamins_minerals.jpg";
 import vaccine from "/vaccine.jpg";
 import medicalEquipment from "/medical_equipment.jpg";
+import organicBeautySupps from "/organic_beauty_products.JPG?url";
 
 function MedicationsAndSupplies() {
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
@@ -10,7 +11,8 @@ function MedicationsAndSupplies() {
     {
       id: 1,
       imgSrc: vitaminsAndMinerals,
-      content: "A wide range of essential vitamins and minerals",
+      content:
+        "A wide range of essential vitamins, minerals, OTC and prescription medicine, and much more",
       healthTip:
         "Vitamin D helps boost your immune system, while magnesium supports muscle function and bone health.",
     },
@@ -23,6 +25,14 @@ function MedicationsAndSupplies() {
     },
     {
       id: 3,
+      imgSrc: organicBeautySupps,
+      content:
+        "Organic beauty solutions for skincare, haircare, and wellness, free of harsh chemicals.",
+      healthTip:
+        "Switching to organic beauty products can nourish your skin and hair naturally while reducing exposure to synthetic ingredients.",
+    },
+    {
+      id: 4,
       imgSrc: medicalEquipment,
       content:
         "A large selection of medical equipment such as gloves, masks, hand sanitizers, etc.",
@@ -63,6 +73,12 @@ function MedicationsAndSupplies() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="more-info-div">
+        <p>
+          All services are expertly provided by our licensed and certified
+          pharmacist specializing in cosmetic skincare and analysis.
+        </p>
       </div>
     </div>
   );
