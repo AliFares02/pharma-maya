@@ -23,8 +23,10 @@ function Gallery() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    fade: true,
     cssEase: "linear",
+    centerMode: true,
+    centerPadding: "0",
+    fade: true,
   };
   return (
     <div className="gallery-container">

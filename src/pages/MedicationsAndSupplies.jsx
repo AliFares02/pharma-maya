@@ -12,14 +12,15 @@ function MedicationsAndSupplies() {
       id: 1,
       imgSrc: vitaminsAndMinerals,
       content:
-        "A wide range of essential vitamins, minerals, OTC and prescription medicine, and much more",
+        "A wide range of essential vitamins, minerals, OTC/prescription medicine, and much more.",
       healthTip:
         "Vitamin D helps boost your immune system, while magnesium supports muscle function and bone health.",
     },
     {
       id: 2,
       imgSrc: vaccine,
-      content: "Vaccine shots such as flu and COVID-19",
+      content:
+        "Vaccine services for flu, COVID-19, and many other preventable diseases.",
       healthTip:
         "Vaccines protect against serious diseases and help your body build immunity without the illness.",
     },
@@ -27,7 +28,7 @@ function MedicationsAndSupplies() {
       id: 3,
       imgSrc: organicBeautySupps,
       content:
-        "Organic beauty solutions for skincare, haircare, and wellness, free of harsh chemicals.",
+        "Organic and personalized beauty solutions for skincare, haircare, and wellness, free of harsh chemicals.",
       healthTip:
         "Switching to organic beauty products can nourish your skin and hair naturally while reducing exposure to synthetic ingredients.",
     },
@@ -35,7 +36,7 @@ function MedicationsAndSupplies() {
       id: 4,
       imgSrc: medicalEquipment,
       content:
-        "A large selection of medical equipment such as gloves, masks, hand sanitizers, etc.",
+        "A large selection of medical-grade PPE such as gloves, masks, hand sanitizers, etc.",
       healthTip:
         "Wearing gloves and masks can prevent the spread of germs, and hand sanitizers are essential for quick disinfection.",
     },
@@ -74,10 +75,43 @@ function MedicationsAndSupplies() {
           </div>
         ))}
       </div>
-      <div className="more-info-div">
+      <p
+        style={{
+          fontSize: "1.6rem",
+          fontStyle: "italic",
+          marginBottom: "1rem",
+          textAlign: "center",
+        }}
+      >
+        Delivery across all 5 boroughs!
+      </p>
+      <div className="coming-soon-div">
+        <h2>Coming Soon...</h2>
         <p>
-          All services are expertly provided by our licensed and certified
-          pharmacist specializing in cosmetic skincare and analysis.
+          Our pharmacy will soon offer services such as a
+          <strong> state-of-the-art skin analyzer</strong> which will evaluate
+          hydration levels, texture, sun damage, and more, helping you achieve
+          radiant and healthier skin.
+        </p>
+        <p>
+          Essential health self-services like
+          <strong> blood pressure monitoring.</strong>
+        </p>
+        <p>
+          All conducted by our licensed and board certified pharmacist
+          specializing in <strong>cosmetic skincare </strong>and
+          <strong> analysis.</strong>
+        </p>
+      </div>
+      <div className="more-info-div">
+        <h2>Not Covered by Insurance?</h2>
+        <p>
+          Don’t worry! We guarantee<strong> transparent </strong> and
+          <strong> competitive </strong>pricing options designed for
+          <strong> self-pay patients</strong>, ensuring
+          <strong> exceptional value </strong>and
+          <strong> affordability </strong>
+          for your healthcare needs.
         </p>
       </div>
     </div>

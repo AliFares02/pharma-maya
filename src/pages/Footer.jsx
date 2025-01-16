@@ -7,9 +7,10 @@ function Footer() {
         <div>
           <p
             style={{
-              display: "inline-block",
               fontSize: "1.1rem",
               borderBottom: "1px solid #503076",
+
+              display: "inline",
             }}
           >
             Contact Us
@@ -19,7 +20,6 @@ function Footer() {
             <a
               style={{
                 fontWeight: "500",
-                textDecoration: "none",
                 color: "#503076",
               }}
               href="mailto:pharmamia310@gmail.com"
@@ -32,7 +32,7 @@ function Footer() {
             <a
               style={{
                 fontWeight: "500",
-                textDecoration: "none",
+
                 color: "#503076",
               }}
               href="tel:+7183335588"
@@ -45,7 +45,7 @@ function Footer() {
             <a
               style={{
                 fontWeight: "500",
-                textDecoration: "none",
+
                 color: "#503076",
               }}
               href="tel:+7183335330"
@@ -57,9 +57,10 @@ function Footer() {
         <div>
           <p
             style={{
-              display: "inline-block",
               fontSize: "1.1rem",
               borderBottom: "1px solid #503076",
+
+              display: "inline",
             }}
           >
             Visit Us
@@ -69,6 +70,51 @@ function Footer() {
               310 86th Street, Brooklyn, NY 11209
             </strong>
           </p>
+        </div>
+        <div>
+          <p
+            style={{
+              fontSize: "1.1rem",
+              borderBottom: "1px solid #503076",
+
+              display: "inline",
+            }}
+          >
+            We're Open
+          </p>
+          <p style={{ fontWeight: "500" }}>
+            Mon–Fri: 9:00 AM – 6:00 PM
+            <br />
+            Sat: 10:00 AM – 3:00 PM
+            <br />
+            Sun: Closed
+          </p>
+        </div>
+        <div>
+          <p
+            style={{
+              fontSize: "1.1rem",
+              borderBottom: "1px solid #503076",
+
+              display: "inline",
+            }}
+          >
+            We Speak
+          </p>
+
+          <ul
+            style={{
+              listStyleType: "none",
+              padding: 0,
+              margin: 0,
+              fontWeight: "500",
+            }}
+          >
+            <li>English</li>
+            <li>Arabic</li>
+            <li>Spanish</li>
+            <li>French</li>
+          </ul>
         </div>
       </div>
       <div className="map-container">
