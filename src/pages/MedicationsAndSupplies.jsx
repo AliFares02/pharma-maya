@@ -81,6 +81,7 @@ function MedicationsAndSupplies() {
           fontStyle: "italic",
           marginBottom: "1rem",
           textAlign: "center",
+          fontWeight: "600",
         }}
       >
         Delivery across all 5 boroughs!
