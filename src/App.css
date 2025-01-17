@@ -103,7 +103,7 @@ h6 {
 }
 
 .home-content h1 {
-  font-size: clamp(1.5rem, 2vw, 3rem) !important;
+  font-size: clamp(1.6rem, 2vw, 3rem) !important;
 }
 
 .home-content h2 {
@@ -151,17 +151,18 @@ h6 {
   justify-content: center;
   text-align: center;
   font-size: 1.5rem;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 .about-us-content > p {
+  font-size: clamp(1rem, 1vw, 1.6rem) !important;
   margin-bottom: 1rem;
 }
 
 .about-us-content > h1 {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 3rem) !important;
   color: #503076;
 }
 .slick-slide .review {
@@ -245,7 +246,7 @@ h6 {
 
 .medications-and-supplies-container > h1 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 3rem) !important;
   color: #503076;
 }
 
@@ -297,7 +298,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1vw, 1.2rem) !important;
 }
 
 .card-front {
@@ -323,7 +324,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1vw, 1.2rem) !important;
 }
 
 .more-info-div,
@@ -336,17 +337,22 @@ h6 {
   color: #503076;
   width: 100%;
   padding: 0.5rem;
-  font-size: 1.3rem;
   margin-bottom: 1.35rem;
 }
 
 .more-info-div p {
   width: 70%;
+  font-size: clamp(1.2rem, 1vw, 1.5rem) !important;
+}
+.more-info-div h2,
+.coming-soon-div h2 {
+  font-size: clamp(1.5rem, 1.7vw, 2rem) !important;
 }
 
 .coming-soon-div p {
   width: 70%;
   margin-bottom: 1rem;
+  font-size: clamp(1.2rem, 1vw, 1.5rem) !important;
 }
 
 .accepted-insurances-container {
@@ -359,7 +365,7 @@ h6 {
 }
 
 .accepted-insurances-container h1 {
-  font-size: 2rem !important;
+  font-size: clamp(1.6rem, 2vw, 3rem) !important;
   padding-bottom: 2rem;
   text-align: center;
   margin-top: 2rem;
@@ -441,6 +447,7 @@ iframe {
 }
 
 .header-section > a {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
   position: relative;
   text-decoration: none;
   color: #503076;

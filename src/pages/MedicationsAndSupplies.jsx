@@ -52,7 +52,7 @@ function MedicationsAndSupplies() {
     >
       <h1>We Offer</h1>
 
-      <h3>(Flip a card to reveal a health tip)</h3>
+      <p style={{ fontWeight: "600" }}>(Flip a card to reveal a health tip)</p>
 
       <div className="meds-and-supplies-content">
         {cardsData.map((card, idx) => (
@@ -77,7 +77,7 @@ function MedicationsAndSupplies() {
       </div>
       <p
         style={{
-          fontSize: "1.6rem",
+          fontSize: "clamp(1.3rem, 1vw, 1.6rem)",
           fontStyle: "italic",
           marginBottom: "1rem",
           textAlign: "center",

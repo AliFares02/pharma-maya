@@ -7,7 +7,7 @@ function Footer() {
         <div>
           <p
             style={{
-              fontSize: "1.1rem",
+              fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               borderBottom: "1px solid #503076",
 
               display: "inline",
@@ -15,7 +15,7 @@ function Footer() {
           >
             Contact Us
           </p>
-          <p>
+          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
             Email:&nbsp;
             <a
               style={{
@@ -27,7 +27,7 @@ function Footer() {
               pharmamia310@gmail.com
             </a>
           </p>
-          <p>
+          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
             Telephone:&nbsp;
             <a
               style={{
@@ -35,12 +35,12 @@ function Footer() {
 
                 color: "#503076",
               }}
-              href="tel:+7183335588"
+              href="tel:+17183335588"
             >
               (718) 333-5588
             </a>
           </p>
-          <p>
+          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
             Fax:&nbsp;
             <a
               style={{
@@ -48,7 +48,7 @@ function Footer() {
 
                 color: "#503076",
               }}
-              href="tel:+7183335330"
+              href="tel:+17183335330"
             >
               (718) 333-5330
             </a>
@@ -57,7 +57,7 @@ function Footer() {
         <div>
           <p
             style={{
-              fontSize: "1.1rem",
+              fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               borderBottom: "1px solid #503076",
 
               display: "inline",
@@ -65,7 +65,7 @@ function Footer() {
           >
             Visit Us
           </p>
-          <p>
+          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
             <strong style={{ fontWeight: "500" }}>
               310 86th Street, Brooklyn, NY 11209
             </strong>
@@ -74,7 +74,7 @@ function Footer() {
         <div>
           <p
             style={{
-              fontSize: "1.1rem",
+              fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               borderBottom: "1px solid #503076",
 
               display: "inline",
@@ -82,7 +82,7 @@ function Footer() {
           >
             We're Open
           </p>
-          <p style={{ fontWeight: "500" }}>
+          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)", fontWeight: "500" }}>
             Mon–Fri: 9:00 AM – 6:00 PM
             <br />
             Sat: 10:00 AM – 3:00 PM
@@ -93,7 +93,7 @@ function Footer() {
         <div>
           <p
             style={{
-              fontSize: "1.1rem",
+              fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               borderBottom: "1px solid #503076",
 
               display: "inline",
@@ -108,6 +108,7 @@ function Footer() {
               padding: 0,
               margin: 0,
               fontWeight: "500",
+              fontSize: "clamp(.8rem, 1vw, 1rem)",
             }}
           >
             <li>English</li>
