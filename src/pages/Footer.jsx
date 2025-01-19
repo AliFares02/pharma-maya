@@ -1,4 +1,7 @@
 import React from "react";
+import { FiMail } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
+import { FaFax } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -15,8 +18,15 @@ function Footer() {
           >
             Contact Us
           </p>
-          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
-            Email:&nbsp;
+          <p
+            style={{
+              fontSize: "clamp(.8rem, 1vw, 1rem)",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <FiMail />
+            :&nbsp;
             <a
               style={{
                 fontWeight: "500",
@@ -27,8 +37,15 @@ function Footer() {
               pharmamia310@gmail.com
             </a>
           </p>
-          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
-            Telephone:&nbsp;
+          <p
+            style={{
+              fontSize: "clamp(.8rem, 1vw, 1rem)",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <FiPhone />
+            :&nbsp;
             <a
               style={{
                 fontWeight: "500",
@@ -40,8 +57,15 @@ function Footer() {
               (718) 333-5588
             </a>
           </p>
-          <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)" }}>
-            Fax:&nbsp;
+          <p
+            style={{
+              fontSize: "clamp(.8rem, 1vw, 1rem)",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <FaFax />
+            :&nbsp;
             <a
               style={{
                 fontWeight: "500",
@@ -83,9 +107,9 @@ function Footer() {
             We're Open
           </p>
           <p style={{ fontSize: "clamp(.8rem, 1vw, 1rem)", fontWeight: "500" }}>
-            Mon–Fri: 9:00 AM – 6:00 PM
+            Mon–Fri: 10:00 AM – 6:00 PM
             <br />
-            Sat: 10:00 AM – 3:00 PM
+            Sat: Closed
             <br />
             Sun: Closed
           </p>

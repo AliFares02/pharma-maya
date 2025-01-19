@@ -2,17 +2,25 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import storeImgOne from "/pharma_maya.jpg";
-import storeImgTwo from "/vaccine.jpg";
+import storeImgOne from "/store_front-min.jpg";
+import storeImgTwo from "/store_img_two-min.jpg";
+import storeImgThree from "/store_img_three-min.jpg";
+import storeImgFour from "/store_img_four-min.jpg";
+import storeImgFive from "/store_img_five-min.jpg";
+import storeImgSix from "/store_img_six-min.jpg";
+import storeImgSeven from "/store_img_seven-min.jpg";
+import storeImgEight from "/store_img_eight-min.jpg";
 
 function Gallery() {
   const images = [
     storeImgOne,
     storeImgTwo,
-    storeImgOne,
-    storeImgTwo,
-    storeImgOne,
-    storeImgTwo,
+    storeImgThree,
+    storeImgFour,
+    storeImgFive,
+    storeImgSix,
+    storeImgSeven,
+    storeImgEight,
   ];
 
   const settings = {
@@ -22,7 +30,7 @@ function Gallery() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6500,
     cssEase: "linear",
     centerMode: true,
     centerPadding: "0",

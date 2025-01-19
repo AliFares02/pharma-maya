@@ -1,7 +1,6 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import logo from "/P X (20).png";
-import backgroundImg from "/pharma_maya.jpg";
+import backgroundImg from "/store_front-min.jpg";
 
 function Home() {
   return (
@@ -13,14 +12,11 @@ function Home() {
         }}
       >
         <div className="home-content">
-          <h1>Pharma Maya</h1>
-          <h2>Pharmacy</h2>
-          <h3>
-            Affordable Care, Compassionate Service – Here for All Your Health
-            Needs.
-          </h3>
+          <h1>Welcome to</h1>
+          <h2>PharmaMaya</h2>
+          <h3>Pharmacy</h3>
         </div>
-        <a href="#about-section" className="scroll-down-indicator">
+        <a href="#tagline-container" className="scroll-down-indicator">
           <IoIosArrowDown />
         </a>
       </div>

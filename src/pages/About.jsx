@@ -83,7 +83,7 @@ function About() {
       <div className="about-us-content">
         <h1>About Us</h1>
         <p>
-          Established in 2020, Pharma Maya Pharmacy has been committed to
+          Established in 2023, PharmaMaya Pharmacy has been committed to
           delivering personalized and reliable healthcare solutions to our
           community.
         </p>
