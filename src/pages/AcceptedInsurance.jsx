@@ -6,11 +6,11 @@ function AcceptedInsurance() {
       id="accepted-insurances-section"
       className="accepted-insurances-container"
     >
-      <h1>We Accept</h1>
       <div className="accepted-insurance-content">
+        <h2>We Accept</h2>
         <p>
-          We accept most major insurance plans. If you have questions about your
-          specific plan, feel free to contact us!
+          Most major insurance plans. If you have questions about your specific
+          plan, feel free to contact us!
         </p>
       </div>
       <div className="section-divider-container">

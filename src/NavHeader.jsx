@@ -36,6 +36,9 @@ function NavHeader() {
         <a href="#accepted-insurances-section" onClick={() => setMenu(false)}>
           We Accept
         </a>
+        <a href="#resources-container" onClick={() => setMenu(false)}>
+          Resources
+        </a>
         <a href="#footer-section" onClick={() => setMenu(false)}>
           Contact Us
         </a>

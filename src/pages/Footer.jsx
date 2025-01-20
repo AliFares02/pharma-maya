@@ -150,7 +150,10 @@ function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      {/* <hr className="divider" /> */}
+      <p style={{ padding: "0 0 .5rem .5rem" }}>
+        &#42;Medication and drug information sourced from the U.S. Food and Drug
+        Administration (FDA)
+      </p>
     </div>
   );
 }

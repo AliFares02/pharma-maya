@@ -85,13 +85,13 @@ function MedicationsAndSupplies() {
           fontWeight: "600",
         }}
       >
-        Delivery across all 5 boroughs!
+        Free delivery across all 5 boroughs!
       </p>
       <div className="money-transfer-div">
         <SiWesternunion />
         <p>
-          Western Union Money Transfer – Send and Receive Money with Ease at
-          PharmaMaya Pharmacy.
+          Western Union Money Transfer – Send and Receive Money with Ease at Our
+          Pharmacy.
         </p>
       </div>
       <div className="section-divider-container">
@@ -99,13 +99,13 @@ function MedicationsAndSupplies() {
       </div>
       <div className="coming-soon-div">
         <h2>Coming Soon...</h2>
-        <p>
+        <p style={{ marginBottom: "1.15rem" }}>
           Our pharmacy will soon offer services such as a
           <strong> state-of-the-art skin analyzer</strong> which will evaluate
           hydration levels, texture, sun damage, and more, helping you achieve
           radiant and healthier skin.
         </p>
-        <p>
+        <p style={{ marginBottom: "1.15rem" }}>
           Essential health self-services like
           <strong> blood pressure monitoring.</strong>
         </p>
