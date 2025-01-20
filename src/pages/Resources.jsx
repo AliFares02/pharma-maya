@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { CgSpinner } from "react-icons/cg";
 
 function Resources() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -123,7 +124,7 @@ function Resources() {
       <form onSubmit={handleSearch}>
         <input
           type="text"
-          placeholder="Enter name of drug..."
+          placeholder="Enter name of medicine..."
           onChange={(e) => {
             setSearchQuery(e.target.value);
           }}
@@ -132,14 +133,14 @@ function Resources() {
           disabled={!searchQuery.trim() || isLoading}
           type="submit"
           style={{
-            cursor: isLoading
-              ? "wait"
-              : !searchQuery.trim()
-              ? "default"
-              : "pointer",
+            cursor: isLoading || !searchQuery.trim() ? "default" : "pointer",
           }}
         >
-          {isLoading ? "Searching..." : <FaSearch />}
+          {isLoading ? (
+            <CgSpinner className="spinner search-icon" />
+          ) : (
+            <FaSearch className="search-icon" />
+          )}
         </button>
       </form>
       {error ? <p className="error">{error}</p> : null}
