@@ -525,6 +525,9 @@ iframe {
   .footer-container {
     height: fit-content !important;
   }
+  .accepted-insurances-container {
+    height: 100vh;
+  }
 }
 @media (max-width: 862px) {
   .header-section {
