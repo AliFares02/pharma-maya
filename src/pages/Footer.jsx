@@ -161,6 +161,7 @@ function Footer() {
           style={{
             fontSize: "clamp(0.8rem, 1vw, 1rem)",
             lineHeight: "1.5",
+            textAlign: "center",
           }}
         >
           Visit{" "}
