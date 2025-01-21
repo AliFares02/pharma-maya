@@ -43,8 +43,8 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f6f6f6;
-  color: purple;
+  background-color: #503076;
+  color: #f6f6f6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,8 +64,7 @@ h6 {
 .medications-and-supplies-container,
 .accepted-insurances-container,
 .gallery-container,
-.tagline-container,
-.resources-container {
+.tagline-container {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -250,6 +249,7 @@ h6 {
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.1) contrast(1.1) saturate(1.3);
 }
 
 .medications-and-supplies-container {
@@ -397,8 +397,7 @@ h6 {
   justify-content: center;
   align-items: center;
   min-height: fit-content;
-  height: 50vh;
-  padding: 4.1rem 0 0 0;
+  height: 75vh;
 }
 
 .accepted-insurance-content {
@@ -422,101 +421,6 @@ h6 {
   font-size: clamp(1.2rem, 1vw, 1.5rem) !important;
 }
 
-.resources-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-  max-height: fit-content;
-  padding-bottom: 2rem;
-}
-
-.resources-container h1 {
-  text-align: center;
-  font-size: clamp(1.6rem, 2vw, 3rem) !important;
-  margin-bottom: 1rem;
-}
-
-.resources-container form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-.resources-container input {
-  width: fit-content;
-  height: 3rem;
-  background-color: #f6f6f6;
-  outline: none;
-  border: 1px solid #503076;
-  border-radius: 0.25rem;
-  font-family: "Lexend";
-  padding: 0.5rem;
-  font-size: clamp(1.5rem, 1.7vw, 2rem) !important;
-}
-
-.resources-container form button {
-  height: 3rem;
-  width: 3rem;
-  padding: 0.5rem;
-  color: #503076;
-  border: 1px solid #503076;
-  border-radius: 0.25rem;
-  background-color: #dadada;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-icon {
-  height: 2.2rem;
-  width: 2.2rem;
-}
-
-.hide {
-  display: none !important;
-}
-
-.error {
-  color: #e74c3c;
-  font-size: clamp(1.2rem, 1vw, 1.5rem) !important;
-}
-
-.drug-info-container {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  height: 80%;
-  overflow-y: scroll;
-  padding: 0.5rem;
-  border-radius: 0.7rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
-  gap: 1rem;
-}
-
-.drug-sub-info-container h2 {
-  margin-bottom: 0.25rem;
-}
-
 .footer-container {
   margin: 0;
   padding: 0;
@@ -526,9 +430,18 @@ h6 {
   justify-content: center;
   height: fit-content;
   width: 100%;
-  color: #503076;
-  background-color: #f6f6f6;
+  color: #f6f6f6;
+  background-color: #503076;
   box-sizing: border-box;
+}
+.learn-more-footer-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .map-container {
@@ -541,7 +454,7 @@ h6 {
 iframe {
   width: 98%;
   height: 12.5rem;
-  border: 2px solid #503076;
+  border: none;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
@@ -570,7 +483,7 @@ iframe {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   position: relative;
   text-decoration: none;
-  color: #503076;
+  color: #f6f6f6;
   margin: 0 2rem;
 }
 
@@ -581,7 +494,7 @@ iframe {
   left: 0;
   width: 0;
   height: 2px;
-  background: #503076;
+  background: #f6f6f6;
   transition: width 0.3s ease;
 }
 
@@ -614,7 +527,7 @@ iframe {
     height: fit-content !important;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 840px) {
   .header-section {
     position: fixed;
     flex-direction: column;
@@ -622,7 +535,7 @@ iframe {
     right: -255px;
     height: 100%;
     width: 240px;
-    background-color: #f6f6f6;
+    background-color: #503076;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     justify-content: space-evenly;

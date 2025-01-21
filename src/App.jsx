@@ -7,7 +7,6 @@ import AcceptedInsurance from "./pages/AcceptedInsurance";
 import Footer from "./pages/Footer";
 import Gallery from "./pages/Gallery";
 import Tagline from "./pages/Tagline";
-import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <Gallery />
       <MedicationsAndSupplies />
       <AcceptedInsurance />
-      <Resources />
       <Footer />
     </div>
   );

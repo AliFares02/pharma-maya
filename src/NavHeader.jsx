@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import logo from "/P X (20).png";
+import logo from "/P X (21).png";
 
 function NavHeader() {
   const [menu, setMenu] = useState(false);
@@ -35,9 +35,6 @@ function NavHeader() {
         </a>
         <a href="#accepted-insurances-section" onClick={() => setMenu(false)}>
           We Accept
-        </a>
-        <a href="#resources-container" onClick={() => setMenu(false)}>
-          Resources
         </a>
         <a href="#footer-section" onClick={() => setMenu(false)}>
           Contact Us

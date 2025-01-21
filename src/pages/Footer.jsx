@@ -1,6 +1,5 @@
 import React from "react";
-import { FiMail } from "react-icons/fi";
-import { FiPhone } from "react-icons/fi";
+import { FiMail, FiPhone, FiExternalLink } from "react-icons/fi";
 import { FaFax } from "react-icons/fa";
 
 function Footer() {
@@ -11,9 +10,10 @@ function Footer() {
           <p
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
-              borderBottom: "1px solid #503076",
-
-              display: "inline",
+              fontWeight: "600",
+              borderBottom: "1px solid #f6f6f6",
+              marginBottom: ".3rem",
+              display: "inline-block",
             }}
           >
             Contact Us
@@ -30,7 +30,7 @@ function Footer() {
             <a
               style={{
                 fontWeight: "500",
-                color: "#503076",
+                color: "#f6f6f6",
               }}
               href="mailto:pharmamia310@gmail.com"
             >
@@ -50,7 +50,7 @@ function Footer() {
               style={{
                 fontWeight: "500",
 
-                color: "#503076",
+                color: "#f6f6f6",
               }}
               href="tel:+17183335588"
             >
@@ -70,7 +70,7 @@ function Footer() {
               style={{
                 fontWeight: "500",
 
-                color: "#503076",
+                color: "#f6f6f6",
               }}
               href="tel:+17183335330"
             >
@@ -82,9 +82,10 @@ function Footer() {
           <p
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
-              borderBottom: "1px solid #503076",
-
-              display: "inline",
+              fontWeight: "600",
+              borderBottom: "1px solid #f6f6f6",
+              marginBottom: ".3rem",
+              display: "inline-block",
             }}
           >
             Visit Us
@@ -99,9 +100,10 @@ function Footer() {
           <p
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
-              borderBottom: "1px solid #503076",
-
-              display: "inline",
+              fontWeight: "600",
+              borderBottom: "1px solid #f6f6f6",
+              marginBottom: ".3rem",
+              display: "inline-block",
             }}
           >
             We're Open
@@ -118,9 +120,10 @@ function Footer() {
           <p
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
-              borderBottom: "1px solid #503076",
-
-              display: "inline",
+              fontWeight: "600",
+              borderBottom: "1px solid #f6f6f6",
+              marginBottom: ".3rem",
+              display: "inline-block",
             }}
           >
             We Speak
@@ -142,6 +145,42 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <div className="learn-more-footer-div">
+        <p
+          style={{
+            fontSize: "clamp(.9rem, 1vw, 1.2rem)",
+            fontWeight: "600",
+            borderBottom: "1px solid #f6f6f6",
+            marginBottom: ".3rem",
+            display: "inline-block",
+          }}
+        >
+          Learn More
+        </p>
+        <p
+          style={{
+            fontSize: "clamp(0.8rem, 1vw, 1rem)",
+            lineHeight: "1.5",
+          }}
+        >
+          Visit{" "}
+          <a
+            href="https://www.drugs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#f6f6f6",
+              textDecoration: "underline",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.2rem",
+            }}
+          >
+            Drugs.com <FiExternalLink />
+          </a>{" "}
+          for reliable information about your medications.
+        </p>
+      </div>
       <div className="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48445.05820795061!2d-74.05309578051384!3d40.63393657951822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff18a917999%3A0x111ec928ea3d12bf!2sPharmaMaya%20LLC!5e0!3m2!1sen!2sus!4v1736375254388!5m2!1sen!2sus&gestureHandling=greedy&zoom=14"
@@ -150,10 +189,6 @@ function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <p style={{ padding: "0 0 .5rem .5rem" }}>
-        &#42;Medication and drug information sourced from the U.S. Food and Drug
-        Administration (FDA)
-      </p>
     </div>
   );
 }
