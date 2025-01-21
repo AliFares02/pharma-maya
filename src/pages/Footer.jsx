@@ -11,7 +11,7 @@ function Footer() {
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               fontWeight: "600",
-              borderBottom: "1px solid #f6f6f6",
+              borderBottom: "1px solid #503076",
               marginBottom: ".3rem",
               display: "inline-block",
             }}
@@ -30,7 +30,7 @@ function Footer() {
             <a
               style={{
                 fontWeight: "500",
-                color: "#f6f6f6",
+                color: "#503076",
               }}
               href="mailto:pharmamia310@gmail.com"
             >
@@ -50,7 +50,7 @@ function Footer() {
               style={{
                 fontWeight: "500",
 
-                color: "#f6f6f6",
+                color: "#503076",
               }}
               href="tel:+17183335588"
             >
@@ -70,7 +70,7 @@ function Footer() {
               style={{
                 fontWeight: "500",
 
-                color: "#f6f6f6",
+                color: "#503076",
               }}
               href="tel:+17183335330"
             >
@@ -83,7 +83,7 @@ function Footer() {
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               fontWeight: "600",
-              borderBottom: "1px solid #f6f6f6",
+              borderBottom: "1px solid #503076",
               marginBottom: ".3rem",
               display: "inline-block",
             }}
@@ -101,7 +101,7 @@ function Footer() {
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               fontWeight: "600",
-              borderBottom: "1px solid #f6f6f6",
+              borderBottom: "1px solid #503076",
               marginBottom: ".3rem",
               display: "inline-block",
             }}
@@ -121,7 +121,7 @@ function Footer() {
             style={{
               fontSize: "clamp(.9rem, 1vw, 1.2rem)",
               fontWeight: "600",
-              borderBottom: "1px solid #f6f6f6",
+              borderBottom: "1px solid #503076",
               marginBottom: ".3rem",
               display: "inline-block",
             }}
@@ -150,7 +150,7 @@ function Footer() {
           style={{
             fontSize: "clamp(.9rem, 1vw, 1.2rem)",
             fontWeight: "600",
-            borderBottom: "1px solid #f6f6f6",
+            borderBottom: "1px solid #503076",
             marginBottom: ".3rem",
             display: "inline-block",
           }}
@@ -169,7 +169,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: "#f6f6f6",
+              color: "#503076",
               textDecoration: "underline",
               display: "inline-flex",
               alignItems: "center",

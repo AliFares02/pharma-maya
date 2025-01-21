@@ -15,7 +15,7 @@ function MedicationsAndSupplies() {
       content:
         "A wide range of essential vitamins, minerals, OTC/prescription medicine, and much more.",
       healthTip:
-        "Vitamin D helps boost your immune system, while magnesium supports muscle function and bone health.",
+        "Vitamin D enhances immune function and helps your body absorb calcium for stronger bones. Magnesium supports muscle function and maintains heart health.",
     },
     {
       id: 2,
@@ -23,15 +23,15 @@ function MedicationsAndSupplies() {
       content:
         "Vaccine services for flu, shingles, pneumonia, RSV, and COVID-19 – no appointment necessary!",
       healthTip:
-        "Vaccines protect against serious diseases and help your body build immunity without the illness.",
+        "Vaccines provide immunity by helping your body recognize harmful pathogens, reducing your risk of serious diseases like flu, shingles, and COVID-19 without causing illness.",
     },
     {
       id: 3,
       imgSrc: organicBeautySupps,
       content:
-        "Organic and personalized beauty solutions for skincare, haircare, and wellness, free of harsh chemicals.",
+        "Exclusive organic and personalized beauty solutions for skincare, haircare, and wellness, free of harsh chemicals.",
       healthTip:
-        "Switching to organic beauty products can nourish your skin and hair naturally while reducing exposure to synthetic ingredients.",
+        "Switching to organic beauty solutions nourishes your skin and hair with natural ingredients minus the irritation, while personalized solutions go a step further by tailoring care to your unique skin needs—something most pharmacies don’t offer.",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ function MedicationsAndSupplies() {
       content:
         "A large selection of medical-grade PPE such as gloves, masks, hand sanitizers, etc.",
       healthTip:
-        "Wearing gloves and masks can prevent the spread of germs, and hand sanitizers are essential for quick disinfection.",
+        "When it comes to viruses and harmful bacteria, being both proactive and reactive is crucial. With the right protective equipment, you can optimize your safety and reduce exposure.",
     },
   ];
 

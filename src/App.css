@@ -43,8 +43,8 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #503076;
-  color: #f6f6f6;
+  background-color: #e8e8e8;
+  color: #503076;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,8 +55,9 @@ h6 {
 }
 
 .logo {
-  width: 7rem;
+  width: 8rem;
   cursor: pointer;
+  margin-left: 0.3rem;
 }
 
 .home-container,
@@ -69,7 +70,7 @@ h6 {
   height: 100vh;
   width: 100%;
   min-width: 370px;
-  padding-top: 5rem;
+  padding-top: 6rem;
   background-color: #dadada;
   color: #503076;
 }
@@ -78,6 +79,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem !important;
 }
 
 .background-image {
@@ -88,7 +90,7 @@ h6 {
   width: 100%;
   position: absolute;
   background-size: cover;
-  background-position: center 1rem;
+  background-position: center 5px;
   background-repeat: no-repeat;
 }
 
@@ -249,7 +251,7 @@ h6 {
   object-fit: cover;
   border-radius: 0.5rem;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
-  filter: brightness(1.1) contrast(1.1) saturate(1.3);
+  filter: brightness(1.2) contrast(1.05) saturate(1.1);
 }
 
 .medications-and-supplies-container {
@@ -396,7 +398,6 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: fit-content;
   height: 75vh;
 }
 
@@ -430,8 +431,8 @@ h6 {
   justify-content: center;
   height: fit-content;
   width: 100%;
-  color: #f6f6f6;
-  background-color: #503076;
+  color: #503076;
+  background-color: #e8e8e8;
   box-sizing: border-box;
 }
 .learn-more-footer-div {
@@ -440,8 +441,7 @@ h6 {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.75rem;
-  text-align: center;
+  margin-bottom: 0.3rem;
 }
 
 .map-container {
@@ -483,7 +483,7 @@ iframe {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   position: relative;
   text-decoration: none;
-  color: #f6f6f6;
+  color: #503076;
   margin: 0 2rem;
 }
 
@@ -494,7 +494,7 @@ iframe {
   left: 0;
   width: 0;
   height: 2px;
-  background: #f6f6f6;
+  background: #503076;
   transition: width 0.3s ease;
 }
 
@@ -522,12 +522,11 @@ iframe {
   }
   .about-container,
   .medications-and-supplies-container,
-  .accepted-insurances-container,
   .footer-container {
     height: fit-content !important;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 862px) {
   .header-section {
     position: fixed;
     flex-direction: column;
@@ -535,7 +534,7 @@ iframe {
     right: -255px;
     height: 100%;
     width: 240px;
-    background-color: #503076;
+    background-color: #e8e8e8;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     justify-content: space-evenly;
