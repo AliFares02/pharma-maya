@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import logo from "/P X (25).png";
+import logo from "/logo.png";
 
 function NavHeader() {
   const [menu, setMenu] = useState(false);
