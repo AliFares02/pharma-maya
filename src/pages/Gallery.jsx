@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -10,8 +10,10 @@ import storeImgFive from "/store_img_five-min.jpg";
 import storeImgSix from "/store_img_six-min.jpg";
 import storeImgSeven from "/store_img_seven-min.jpg";
 import storeImgEight from "/store_img_eight-min.jpg";
+import { FaXmark } from "react-icons/fa6";
 
 function Gallery() {
+  const [imageClicked, setImageClicked] = useState(null);
   const images = [
     storeImgOne,
     storeImgTwo,
@@ -29,19 +31,35 @@ function Gallery() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: imageClicked ? false : true,
     autoplaySpeed: 6500,
     cssEase: "linear",
     centerMode: true,
     centerPadding: "0",
     fade: true,
   };
+
   return (
     <div className="gallery-container">
+      {imageClicked && (
+        <div className="gallery-overlay" onClick={() => setImageClicked(null)}>
+          <FaXmark onClick={() => setImageClicked(null)} />
+          <img
+            src={images[imageClicked]}
+            alt=""
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="store-image-container">
-            <img src={img} alt={`Store Image-${index + 1}`} />
+            <img
+              src={img}
+              alt={`Store Image-${index + 1}`}
+              onClick={() => setImageClicked(index)}
+            />
           </div>
         ))}
       </Slider>
