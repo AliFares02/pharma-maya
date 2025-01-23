@@ -41,7 +41,7 @@ function Gallery() {
 
   return (
     <div className="gallery-container">
-      {imageClicked && (
+      {imageClicked !== null && (
         <div className="gallery-overlay" onClick={() => setImageClicked(null)}>
           <FaXmark onClick={() => setImageClicked(null)} />
           <img
@@ -58,7 +58,9 @@ function Gallery() {
             <img
               src={img}
               alt={`Store Image-${index + 1}`}
-              onClick={() => setImageClicked(index)}
+              onClick={() => {
+                setImageClicked(index);
+              }}
             />
           </div>
         ))}
